@@ -4,10 +4,10 @@ interface Props {
     imagen:string;
     link:string;
     precio:number;
-
+    descripcion: string;
 }
 
-const {nombreProd, imagen, link , precio} = Astro.props
+const {nombreProd, descripcion, imagen, link , precio} = Astro.props
 
 ---
 
@@ -22,6 +22,9 @@ const {nombreProd, imagen, link , precio} = Astro.props
                 <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{nombreProd}</h5>
             </a>
             <div class="flex items-center mt-2.5 mb-5">
+                <p>
+                    {descripcion}
+                </p>
             </div>
             <div class="flex items-center justify-between">
                 <span class="text-3xl font-bold text-gray-900 dark:text-white">${precio} ARS</span>
