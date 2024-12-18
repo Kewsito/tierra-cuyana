@@ -1,0 +1,33 @@
+---
+import Welcome from '../components/navbar.astro';
+import Layout from '../layouts/Layout.astro';
+import Carrousel from '../components/carrousel.astro';
+import Card from '../components/tarjetas.astro'
+import AboutUs from '../components/aboutus.astro'
+import Contacto from '../components/contacto.astro'
+import Footer from '../components/footer.astro'
+
+
+// otros imports
+import bolso from '../images/bolso.jpg'
+import riñonera from '../images/riñonera.jpg'
+import morral from '../images/morral.jpg'
+---
+
+<Layout>
+	<Welcome />
+	<Carrousel/>
+	<div class="flex justify-center text-center m-20">
+		<h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Nuestros<mark class="px-2 text-white bg-amber-600 rounded dark:bg-blue-500">Productos</mark></h1>
+	</div>
+	<div class="justify-center m-5 flex gap-6">
+
+	<Card nombreProd='Bolsos' link='https://drive.google.com/drive/folders/1yiqzwRuFCKcjespkH7ta-dUSd-Za0jCk' imagen={bolso.src} precio={5000}/>
+	<Card nombreProd='Riñonera' link='https://drive.google.com/drive/folders/1Wi9OU5Q66oFtrFWbrBxu8GYrNCJE4t4a' imagen={riñonera.src} precio={5000}/>
+	<Card nombreProd='Morral' link='https://drive.google.com/drive/folders/1_6N3jo5BeMhMaG4IEKRg_X8HD32NoX7t' imagen={morral.src} precio={5000}/>
+	</div>	
+	<AboutUs/>
+	<Contacto/>
+	<Footer/>
+
+</Layout>

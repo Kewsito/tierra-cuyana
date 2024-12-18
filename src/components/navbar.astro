@@ -1,0 +1,47 @@
+---
+
+import Image from 'astro/components/Image.astro'
+import logo from '../images/tierrAcuyanA-Photoroom.png'
+---
+
+<div>
+	<section id="inicio">
+		<div class="inset-0 h-full w-full bg-orange-300 [background:radial-gradient(circle, rgba(240,199,122,1) 14%, rgba(176,126,47,1) 68%, rgba(102,102,102,1) 100%)] flex justify-center items-center">
+			<!--!IMAGEN DE LOGO -->
+			<Image src={logo} alt="una imagen" width=290 class="flex"/>
+		</div>
+
+    <div>
+		<nav class="border-solid border-2 border-black bg-white">
+			<div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
+				<div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+					<button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+						
+						<span class="sr-only">Abrir menu</span>
+
+						<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+						</svg>
+					</button>
+				</div>
+
+			<div class=" items-center justify-between hidden w-full md:flex md:w-auto md:order-1 p-1 " id="navbar-cta">
+				<ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+					<li>
+						<a href="https://drive.google.com/drive/folders/19YozdCkym8iktZLoeWL5-I7sWx4nV32R" target="_blank" class="block py-2 px-3 md:p-0  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-600 md:dark:hover:text-yellow-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-black">Catalogo</a>
+					</li>
+					<li>
+						<a href="#sobre-nosotros" class="block py-2 px-3 md:p-0  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-600 md:dark:hover:text-yellow-600  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre Nosotros</a>
+					</li>
+					<li>
+						<a href="#contacto" class="block py-2 px-3 md:p-0  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-600 md:dark:hover:text-yellow-600  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contacto</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</nav>
+    </div>
+	</section>
+</div>
+
+

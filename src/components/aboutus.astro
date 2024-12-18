@@ -1,0 +1,34 @@
+---
+
+import Image from "astro/components/Image.astro"
+import paleta from '../images/paleta-de-pintura.png'
+import cinta from '../images/cinta-metrica.png'
+import tienda from '../images/tienda.png'
+import bolso from '../images/bolso-de-mano.png'
+
+import TarjetaaboutusImgDer from "./tarjetaaboutus-img-der.astro"
+import TarjetaaboutusImgIzq from "./tarjetaaboutus-img-izq.astro"
+---
+
+<section id="sobre-nosotros">
+    <div class="bg-gray-500 p-5">
+        <div class="text-center p-10">
+            <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Sobre<mark class="px-2 text-white bg-amber-600 rounded dark:bg-blue-500">Nosotros</mark></h1>
+        </div>
+        <div class="text-center p-10">
+                <div>
+                    <div class="grid grid-rows-4 gap-12 text-lg font-normal py-10 text-white lg:text-xl dark:text-gray-400 m-5">
+                        
+                        <TarjetaaboutusImgDer titulo="Transformando lo Usado en" titulomarcado="Arte" parrafo="En nuestra tienda nos especializamos en la creación de bolsos, morrales, riñoneras y bolsos para mate, todos elaborados a partir de telas recicladas. Nuestro compromiso con el medio ambiente nos lleva a transformar materiales que ya han tenido una vida útil en productos funcionales y originales, combinando creatividad, calidad y sostenibilidad. Cada uno de nuestros artículos es único, hecho a mano con esmero, y diseñado para acompañarte en tu día a día con estilo y conciencia ecológica. " imagen={paleta} />
+
+                        <TarjetaaboutusImgIzq titulo="Diseños Únicos a Tu" titulomarcado="Medida" parrafo="Además, ofrecemos un servicio personalizado, donde podemos crear bolsos a tu medida, según tus gustos y necesidades. Ya sea que busques un diseño exclusivo o una combinación de colores que te represente, trabajamos contigo para hacer realidad el bolso de tus sueños. Nos encanta darle vida a tus ideas y hacer de cada pieza un accesorio único." imagen={cinta} />
+                        
+
+                        <TarjetaaboutusImgDer titulo="con Nosotros" titulomarcado="Recicla y renueva" parrafo="Si tienes telas que deseas reutilizar, trabajamos con ellas, cobrando solo por la mano de obra y los materiales que utilicemos en la confección del producto. De esta manera, no solo estás obteniendo un artículo exclusivo, sino que también estás contribuyendo al cuidado del medio ambiente. Al elegir reutilizar tus propias telas, formas parte de un ciclo que promueve la sostenibilidad y la reducción de residuos." imagen={bolso} />
+
+                        <TarjetaaboutusImgIzq titulo="Visitanos y descubrí lo mejor del" titulomarcado="Diseño Sostenible" parrafo="¡Visítanos y lleva contigo una pieza única, amigable con el planeta y hecha especialmente para ti! Cada bolso, morral o riñonera que fabricamos es el reflejo de un esfuerzo por combinar moda, funcionalidad y respeto por el medio ambiente. Nos encantaría que formes parte de este proyecto y que encuentres en nuestras creaciones el accesorio perfecto para tu día a día." imagen={tienda} />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
