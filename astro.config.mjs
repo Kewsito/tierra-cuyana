@@ -11,5 +11,5 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://kewsito.github.io',
-  base: 'tierra-cuyana-astro-build',
+  base: 'tierra-cuyana',
 });
