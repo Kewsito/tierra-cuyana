@@ -1,13 +1,13 @@
 ---
 import Image from 'astro/components/Image.astro'
-import imagen1 from '../images/pexels-cottonbro-6070061.png'
+import imagen1 from '../images/carrousel-1.jpg'
 import imagen2 from '../images/pexels-duc-nguyen-2147494495-29744594.jpg'
 ---
 
-
-<div id="default-carousel" class="relative w-full" data-carousel="slide">
+<div class="flex items-center justify-center">
+<div id="default-carousel" class="relative w-full h-full" data-carousel="slide">
     <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+    <div class="relative overflow-hidden rounded-lg md:h-[40rem]">
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <Image src={imagen1} alt="..." class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"  />
@@ -43,4 +43,5 @@ import imagen2 from '../images/pexels-duc-nguyen-2147494495-29744594.jpg'
             <span class="sr-only">Next</span>
         </span>
     </button>
+</div>
 </div>
